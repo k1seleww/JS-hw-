@@ -1,10 +1,5 @@
-const name = 'Andrew';
-
-console.log("Привет, ЗНАЧНИЕ_NAME")  // Hello Andrew 
-
-const number = 123;
-
-console.log("Ошибка, не тот тип данных")  // Ошибка, не тот тип данных
+let nickname = 'Виктор';
+let type = typeof(nickname) == typeof('string')? console.log('Привет, ' + nickname) : console.log('Ошибка, не тот тип данных');
 
 console.log(typeof 9); // number
 console.log(typeof NaN); // number
