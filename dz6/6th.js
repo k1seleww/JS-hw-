@@ -1,5 +1,17 @@
 // 1st
+const p = document.querySelector("p");
+const img = document.querySelector("img")
 
+p.addEventListener('click', function () {
+   img.style.display = "block";
+});
+img.addEventListener('mouseover', function () {
+   img.style.width = "200px";
+   img.style.transition = "width .4s ease"
+});
+img.addEventListener('click', function () {
+   img.style.display = "none";
+});
 
 
 // 2nd
@@ -31,7 +43,12 @@ let result3 = arr.reduce(function(sum, elem) {
 }); 
 
 // 4th
+const input = document.querySelector("input");
+const btn = document.querySelector("button");
 
+btn.addEventListener('click', function () {
+   console.log(input.value);
+})
 
 // 5th
 let elems = document.getElementsByTagName('a');
