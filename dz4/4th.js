@@ -52,20 +52,20 @@ console.log(result_3)
 
 // 4th
 const citiesAndCountries = {
-'Киев': 'Украина',
-'Нью-Йорк': 'США',
-'Амстердам': 'Нидерланды',
-'Берлин': 'Германия',
-'Париж': 'Франция',
-'Лиссабон': 'Португалия',
-'Вена': 'Австрия',
+  'Киев': 'Украина',
+  'Нью-Йорк': 'США',
+  'Амстердам': 'Нидерланды',
+  'Берлин': 'Германия',
+  'Париж': 'Франция',
+  'Лиссабон': 'Португалия',
+  'Вена': 'Австрия',
 };
 
 const getCity = function(){
-  let intoArr = [];
-  for (const [key, value] of Object.entries(this)) {
-      intoArr += {key} - {value} ;}
-  console.log(intoArr);
+    let intoArr = [];
+    for (const [key, value] of Object.entries(this)) {
+        intoArr += `${key} - это ${value}`;}
+    console.log(intoArr);
 };
 
 const ret = getCity.call(citiesAndCountries);
