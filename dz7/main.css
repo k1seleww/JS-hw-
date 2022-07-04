@@ -1,0 +1,33 @@
+html {
+    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.textInput {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.addButton {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: linear-gradient(to right, rgb(139, 7, 221), #54f006);
+    color: #fff;
+}
+
+.DoneCheckbox,
+.TodoText {
+    margin-right: 5px;
+}
+
+button {
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background: linear-gradient(to right, rgb(7, 189, 221), #d98609);
+}
