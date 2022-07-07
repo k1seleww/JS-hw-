@@ -78,18 +78,10 @@ let cookieAge = getCookie("age");
 let cookieName = getCookie("name");
 names.innerHTML = cookieName;
 
-if (
-  cookieAge !== undefined ||
-  (cookieAge === "" && cookieName !== undefined) ||
-  cookieName === ""
-) {
+if (!cookieAge || !cookieName) {
   form.setAttribute("style", "display:none");
 }
-if (
-  cookieAge === undefined ||
-  (cookieAge === "" && cookieName === undefined) ||
-  cookieName === ""
-) {
+if (!cookieAge || !cookieName) {
   wrapper.classList.add("none");
 }
 
@@ -112,3 +104,4 @@ arr.splice(1, 0, "a", "b");
 arr.splice(6, 0, "c");
 arr.splice(8, 0, "e");
 console.log(arr);
+
